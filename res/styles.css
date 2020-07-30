@@ -1,5 +1,19 @@
 @import  "//fonts.googleapis.com/css?family=Montserrat";
 
+@font-face {
+  font-family: 'Ruina One Black';
+  font-style: normal;
+  font-weight: normal;
+  font-variant-ligatures: discretionary-ligatures;
+  font-feature-settings:"dlig" 1;
+  src: local('Ruina One Black'), url('./fonts/RuinaOne-Black.woff') format('woff');
+}
+
+.liga {
+  font-variant-ligatures: discretionary-ligatures;
+  font-feature-settings:"dlig" 1;
+}
+
 html {
   height: 100%;
 }
@@ -10,7 +24,7 @@ body {
   width: auto;
   height: auto;
   min-height: 100%;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Ruina One Black",sans-serif;
   line-height: 1.42857;
   font-size: 17px;
   background-color: white;
@@ -18,6 +32,36 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   word-wrap: normal;
+}
+
+.up-n-smoke-smoke {
+  /* object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; */
+  /* position: absolute; right: 0; top: -100px;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background-size: cover; */
+
+/* width: 100%    !important;
+  height: auto   !important; */
+}
+
+.up-n-smoke-nav-logo {
+  height: 70px;
+}
+
+.up-n-smoke-copy {
+  font-size: 2.6rem;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+.up-n-smoke-copy-wood {
+  color: #f6eae1;
 }
 
 a,a:visited,a:active,a:hover {
@@ -152,7 +196,30 @@ section {
 .form-control {
   text-transform: uppercase!important;
   font-weight: bold!important;
-  border: 1px solid #001f35!important;
+  border: 6px solid #001f35!important;
+  background-color: transparent!important;
+  height: 80px!important;
+  font-size: 2rem!important;
+  color: #ffb300!important;
+
+  transition: all .3s ease-in-out!important;
+}
+
+.form-control:focus {
+  box-shadow: none!important;
+  border-color: #ffb300!important;
+}
+
+.form-control::placeholder {
+  color: #ffffff!important;
+}
+
+.user-signup__form-home .form-control::placeholder{
+  color: #F7251F!important;
+}
+
+.form-control::placeholder {
+  color: #ffffff!important;
 }
 
 .mt-td--centered-vertical {
@@ -195,7 +262,7 @@ h1 {
   font-weight: bold;
   border-width: 0;
   border-radius: 0;
-  font-size: 14px;
+  font-size: 3rem;
   padding-right: 20px;
   padding-left: 20px;
   height: 50px;
@@ -204,10 +271,309 @@ h1 {
   color: #001f35;
 }
 
-.user-signup__submit:hover {
-  background-color: #001f35;
-  color: #f7251f;
+.user-signup__submit-home {
+  font-weight: bold;
+  border-width: 0;
+  border-radius: 0;
+  font-size: 3rem;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  color: #001f35;
 }
+
+.user-signup__submit-home:hover {
+  /* background-color: #001f35; */
+  color: #ffb300;
+}
+
+.user-signup__submit:hover {
+  /* background-color: #001f35; */
+  color: #ffb300;
+}
+
+.navbar {
+  background-color: #FFF;
+}
+
+.red {
+  color: #F7251F;
+}
+
+.yellow {
+  color: #ffb300!important;
+}
+
+.blue {
+  color: #001f35;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.border-bottom-heading {
+  border-bottom: 4px solid #001f35;
+}
+
+.bg-blue {
+  background-color: #001f35;
+}
+
+.bg-yellow {
+  background-color: #ffb300;
+}
+
+.bg-red {
+  background-color: #F7251F;
+}
+
+.bg-peaches {
+  background-color: #ffa5002e;
+}
+
+.bg-wood {
+  background-color: #161415;
+}
+
+.bg-tea {
+  background-color: #ffff0033;
+}
+
+.bg-ribs {
+  background-color: #f5f2d9;
+}
+
+.bg-map::before {
+  left: 0;
+  top: 0;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  opacity: 0.1;
+  background: url(./img/map-bg.png) repeat;
+}
+
+.bg-peaches::before {
+  left: 0;
+  top: 0;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  opacity: 0.05;
+  background: url(./img/peaches-bg.jpg) repeat;
+}
+
+.bg-tea::before {
+  left: 0;
+  top: 0;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  opacity: 0.05;
+  background: url(./img/lemons-bg.png) repeat;
+}
+
+.bg-ribs::before {
+  left: 0;
+  top: 0;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  opacity: 0.04;
+  background: url(./img/ribs-bg.png) repeat;
+}
+
+.up-n-smoke-map-marker {
+  height: 100px;
+}
+
+.up-n-smoke-menu-item-price {
+  font-size: 2.3rem;
+}
+
+.up-n-smoke-menu-item-description {
+  font-size: 1.9rem;
+}
+
+.up-n-smoke-flame-icon {
+  height: 40px;
+}
+
+/** Home **/
+
+.up-n-smoke-logo-home {
+  height: 70vh;
+}
+
+/* .up-n-smoke-home-bg {
+  background: url(./img/up-n-smoke-home-bg.jpg);
+  background-size: cover;
+  opacity: .4;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+} */
+
+.up-n-smoke-home-logo {
+  z-index: 200;
+}
+
+/** End Home **/
+
+.up-n-smoke-date {
+  z-index: 1;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: white;
+}
+
+.up-n-smoke-date::before {
+  content: ' ';
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background-color: #001f35;
+}
+
+/* .bg-wood::before {
+  left: 0;
+  top: 0;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  opacity: 0.05;
+  background: url(./img/wood-bg.jpg) repeat;
+} */
+
+.section-container {
+  border-top: 10px solid #002036;
+}
+
+.section-container-wood {
+  border-top: 10px solid #ddb20b;
+}
+
+.section-container-whitney {
+  border-top: 10px solid #8d2423;
+}
+
+.section-container-bread {
+  border-top: 10px solid #7f5d3d;
+}
+
+.section-container-tea {
+  border-top: 10px solid #ffb300;
+}
+
+.section-container-beck {
+  color: rgb(179, 84, 0);
+}
+
+.up-n-smoke-section {
+  height: 100vh;
+  /* height: 70vh; */
+}
+.peachy {
+  position: relative;
+  left: -400px;
+}
+
+.farm {
+  position: relative;
+  left: -47%;
+}
+
+.wood {
+  position: relative;
+  bottom: -10px;
+}
+
+.beck-smoker {
+  left: -500px;
+  position: relative;
+  top: 50px;
+}
+
+.ribs {
+  position: relative;
+  left: -32px;
+}
+
+.tea {
+  position: relative;
+  left: -111px;
+  top: 61px;
+}
+
+.beck {
+  color: rgb(179, 84, 0);
+}
+
+.bake-bread {
+  color: #80d0d8;
+}
+
+.whitney-creek {
+  color: #8d2423;
+}
+
+.up-n-smoke-x-padding {
+  padding-right: 9rem;
+}
+
+.up-n-smoke-x-padding-top {
+  padding-top: 7rem;
+}
+
+.up-n-smoke-section-title {
+  font-size: 13rem;
+  padding-top: 3rem;
+  line-height: 12rem;
+  border-bottom: 10px solid #ffb300;
+}
+
+.up-n-smoke-section-title-two-where {
+  font-size: 10rem;
+  padding-top: 3rem;
+  line-height: 12rem;
+  border-bottom: 10px solid #F7251F;
+}
+
+.up-n-smoke-header {
+  font-size: 5rem;
+}
+
+.up-n-smoke-header-wood {
+  color: #ddb20b;
+}
+
+.up-n-smoke-bg-img {
+  overflow: hidden;
+}
+
+/* .up-n-smoke-section-title-two-where::after {
+  content: '&#x0052&#x0065';
+} */
 
 @media all and (min-width:481px) {
   p {
@@ -226,5 +592,44 @@ h1 {
 
   h1 {
     font-size: 75px;
+  }
+}
+
+
+/** Video **/
+.fullscreen-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.fullscreen-bg__video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+  
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  filter: contrast(.7);
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+      background: url('http://dev2.slicejack.com/fullscreen-video-demo/img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+      display: none;
   }
 }
