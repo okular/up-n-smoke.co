@@ -318,6 +318,16 @@ h1 {
   border-bottom: 4px solid #001f35;
 }
 
+.border-bottom-heading-white {
+  text-decoration: underline;
+  text-decoration-color:white
+}
+
+.border-bottom-heading-yellow {
+  text-decoration: underline;
+  text-decoration-color:#ffb300
+}
+
 .bg-blue {
   background-color: #001f35;
 }
