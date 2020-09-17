@@ -352,6 +352,10 @@ h1 {
   background-color: #ffff0033;
 }
 
+.bg-black {
+  background-color: black;
+}
+
 .bg-ribs {
   background-color: #f5f2d9;
 }
