@@ -639,11 +639,84 @@ h1 {
 }
 
 @media (max-width: 767px) {
-  .fullscreen-bg {
+  /* .fullscreen-bg {
       background: url('http://dev2.slicejack.com/fullscreen-video-demo/img/videoframe.jpg') center center / cover no-repeat;
   }
 
   .fullscreen-bg__video {
       display: none;
+  } */
+  .up-n-smoke-logo-home {
+    height: 40vh;
+  }
+
+  .up-n-smoke-section-title {
+    font-size: 3rem;
+    line-height: normal;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 0.5rem;
+  }
+
+  .up-n-smoke-x-padding-top {
+    padding-top: 2rem;
+  }
+
+  .beck-smoker {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .wood {
+    width: 100%;
+  }
+
+  .peachy, .ribs {
+    width: 100%;
+    left: 0;
+  }
+
+  .tea, .farm {
+    width: 100%;
+    left: 0;
+    left: 0;
+  }
+
+  .up-n-smoke-section-title-two-where {
+    font-size: 4rem;
+    padding-top: 3rem;
+    line-height: 3rem;
+    border-bottom: 10px solid #F7251F;
+    text-align: center;
+  }
+
+  .niner {
+    font-size: 0.9rem;
+  }
+
+  .up-n-smoke-header {
+    font-size: 4rem;
+    /* text-align: center; */
+    line-height: 4rem;
+  }
+
+  .up-n-smoke-menu-item-price {
+    font-size: 1.6rem;
+  }
+
+  .up-n-smoke-x-padding {
+    padding-right: 0;
+  }
+
+  .up-n-smoke-menu-item-description {
+    font-size: 1.2rem;
+  }
+
+  .up-n-smoke-copy {
+    font-size: 1.2rem;
   }
 }
