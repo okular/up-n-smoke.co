@@ -226,6 +226,16 @@ section {
   vertical-align: middle;
 }
 
+.order-button {
+  text-decoration: none;
+  border: 1px solid;
+}
+
+.order-button:hover,
+.order-button:active {
+  background-color: #F7251F;
+}
+
 .loading-state {
   position: fixed;
   top: 0;
@@ -523,9 +533,9 @@ h1 {
 }
 
 .beck-smoker {
-  left: -500px;
+  left: 75px;
   position: relative;
-  top: 50px;
+  top: 184px;
 }
 
 .ribs {
@@ -559,11 +569,46 @@ h1 {
   padding-top: 7rem;
 }
 
+.up-n-smoke-order-now {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .up-n-smoke-section-title {
   font-size: 13rem;
   padding-top: 3rem;
   line-height: 12rem;
   border-bottom: 10px solid #ffb300;
+}
+
+.up-n-smoke-section-map {
+  font-size: 8rem;
+}
+
+.up-n-smoke-map {
+  width: 100%;
+}
+
+.up-n-smoke-section-link {
+  display: block;
+  float: left;
+  text-decoration: none;
+  padding: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  border: 10px solid #ffb300;
+}
+
+.up-n-smoke-section-link:hover,
+.up-n-smoke-section-link:active {
+  text-decoration: none;
+  background: #ffb300;
+  color: #F7251F;
+}
+
+.up-n-smoke-section-title.button {
+  font-size: 10rem;
+  border: none;
 }
 
 .up-n-smoke-section-title-two-where {
