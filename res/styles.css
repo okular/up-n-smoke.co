@@ -334,8 +334,8 @@ h1 {
 }
 
 .border-bottom-heading-yellow {
-  text-decoration: underline;
-  text-decoration-color:#ffb300
+  /* text-decoration: underline;
+  text-decoration-color:#ffb300 */
 }
 
 .bg-blue {
