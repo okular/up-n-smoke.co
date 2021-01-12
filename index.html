@@ -3,16 +3,800 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>UP-N-SMOKE SOUTHERN BBQ</title>
-    <meta name="description" content="We owe over 500,000 dollars to investors and do not pay our bills" property="description">
+    <meta name="description" content="UP-N-SMOKE Michigan Hardwood Smoked BBQ" property="description">
     <meta name="keywords" content="bbq, barbeque, michigan, upper peninsula, UP, food, southern" property="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1" property="viewport">
-    <meta name="og:title" content="UP-N-SMOKE Michigan Hardwood Smoked BBQ - We owe over 500,000 dollars to investors and do not pay our bills" property="og:title">
-    <meta name="og:description" content="UP-N-SMOKE Michigan Hardwood Smoked BBQ - We owe over 500,000 dollars to investors and do not pay our bills" property="og:description">
+    <meta name="og:title" content="UP-N-SMOKE Michigan Hardwood Smoked BBQ" property="og:title">
+    <meta name="og:description" content="UP-N-SMOKE Michigan Hardwood Smoked BBQ" property="og:description">
     <meta name="og:image" content="" property="og:image">
     <link rel="icon" href="favicon.ico">
     <link type="text/css" rel="stylesheet" href="./res/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="./res/styles.css">
   </head>
   <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v8.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="111963213913455"
+        theme_color="#0084ff"
+        logged_in_greeting="Hi! How can we BBQ you?"
+        logged_out_greeting="Hi! How can we BBQ you?"
+      >
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-mainbg">
+      <a class="navbar-brand navbar-logo" href="#">
+        <img class="up-n-smoke-nav-logo" src="res/img/up-n-smoke-logo.svg" alt="UP-N-SMOKE Michigan BBQ" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+              
+              <li class="nav-item active">
+                <a class="nav-link order-button" href="https://up-n-smoke-bbq-llc.square.site/"><i class="far fa-address-book"></i>Order Now</a>
+              </li>
+              <!-- <li class="nav-item active">
+                  <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>When &amp; Where</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Our Food</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>What We Do</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>What's Up?</a>
+              </li> -->
+          </ul>
+      </div>
+    </nav>
+    <div>
+      <div id="loading" class="loading-state" style="display: none;"></div>
+        <!--Home Section-->
+        <section class="up-n-smoke-home up-n-smoke-section section-container">
+          <div class="fullscreen-bg">
+            <video width="100%" class="up-n-smoke-smoke fullscreen-bg__video" src="res/vids/up-n-smoke-home.mp4" autoplay muted loop></video>
+          </div>
+          <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+              <div class="row up-n-smoke-home-logo">
+                <div class="col-12">
+                  <img class="up-n-smoke-logo-home" src="res/img/up-n-smoke-logo.svg" />
+                </div>
+                <!-- <div class="col-8">
+                  <h3>
+                    Bringing the flavor of the South to the U.P.
+                  </h3>
+                  <br>
+                  <h3>
+                    Sign up to keep up with our progress.
+                  </h3> 
+                  <div class="col-12">
+                    <form class="form form-horizontal user-signup__form user-signup__form-home" name="form" novalidate="" action="https://up-n-smoke.us10.list-manage.com/subscribe/post" method="POST">
+                      <input type="hidden" name="u" value="090dd67ebac9702bd98862a13">
+                      <input type="hidden" name="id" value="1e2a03de91">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="user-signup__form-group m-lg-v form-group col-sm-12">
+                            <input type="email" name="MERGE0" id="MERGE0" class="form-control form-control__input user-signup__email" pattern="/^[a-zA-Z0-9+-_]+(\.[_a-zA-Z0-9+]+)*@[a-zA-Z0-9+-_]+(\.[a-zA-Z0-9+-_]+)*(\.[a-zA-Z]+)$/" placeholder="Email" aria-required="true" required="required">
+                          </div>
+                          <div class="user-signup__form-group m-lg-v form-group col-sm-12">
+                            <input type="email" name="MERGE1" id="MERGE1" class="form-control form-control__input user-signup__email" placeholder="First Name" aria-required="true" required="required">
+                          </div>
+                          <div class="user-signup__form-group m-lg-v form-group col-sm-12">
+                            <input type="email" name="MERGE2" id="MERGE2" class="form-control form-control__input user-signup__email" placeholder="Last Name" aria-required="true" required="required">
+                          </div>        
+                        </div>
+                        <div class="col-12">
+                          <div class="user-signup__form-group m-lg-v form-group text-center col-12 mt-0">
+                            <button type="submit" class="btn btn-default submit user-signup__submit-home col-12"><span>SUBMIT <i><img class="up-n-smoke-flame-icon" src="res/img/flame-icon.png" /></i></span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="up-n-smoke-home-bg"></div>
+            <!-- <video class="up-n-smoke-smoke" src="res/vids/up-n-smoke-smoke.mp4" autoplay muted loop></video> -->
+          </div>
+        </section>
+        <!--End Home Section-->
+        <section class="up-n-smoke-order-now section-container container-fluid bg-black">
+          <div class="container">
+            <div class="row h-100 justify-content-center align-items-center">
+              <div class="mx-auto">
+                <a class="up-n-smoke-section-link" href="https://up-n-smoke-bbq-llc.square.site/">
+                  <h1 class="up-n-smoke-section-title button white">ORDER NOW</h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="up-n-smoke-what-we-do section-container container-fluid bg-yellow">
+          <div class="container">
+            <div class="row h-100 justify-content-center align-items-center">
+              <div class="mx-auto">
+                <div class="user-signup__intro">
+                  <h1 class="up-n-smoke-section-map black">WHERE WE ARE</h1>
+                </div>
+                <div class="up-n-smoke-page-content">
+                  
+                </div>
+                <iframe class="up-n-smoke-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.6254200927838!2d-90.17053138440905!3d46.45611857912521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52a9e8bd21d378cf%3A0x9ae12cf4951d422d!2s232%20E%20Ayer%20St%2C%20Ironwood%2C%20MI%2049938!5e0!3m2!1sen!2sus!4v1603981369612!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--What We Do Section-->
+        <section class="up-n-smoke-what-we-do section-container container-fluid bg-blue">
+          <div class="container">
+            <div class="row h-100 justify-content-center align-items-center">
+              <div class="mx-auto">
+                <div class="user-signup__intro">
+                  <h1 class="up-n-smoke-section-title white">WHAT WE DO</h1>
+                </div>
+                <div class="up-n-smoke-page-content">
+                  <h2 class="red text-center">
+                    Born in the U.P.
+                    <span class="yellow">
+                      Inspired by the South.
+                    </span>
+                    <span class="white">
+                      Created with comfort in mind.
+                    </span>
+                  </h2>
+                  
+                  <!-- <div class="up-n-smoke-row row pt-5">
+                    <div class="col-4">
+                      <img class="mw-100" alt="Cutting Edge Wood - Georgia" src="res/img/cutting-edge-wood.jpg" />
+                    </div>
+                    <div class="col-8">
+                      <h2 class="yellow">
+                        Cutting Edge Wood
+                      </h2>
+                      <p class="up-n-smoke-copy white">
+                        Any BBQ enthusiast understands the importance of cooking with a quality wood.  Ensuring the southern flavor is present in every bite, we teamed up with <span class="red">Cutting Edge Wood</span> originating in Georgia.
+                        <br /><br />
+                        Notes of <span class="yellow">Hickory</span> and <span class="red">Apple</span> are cooked into each creation through our process of smoking the food to perfection.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="up-n-smoke-row row pt-5">
+                    <div class="col-4">
+                      <img class="mw-100" alt="Beck Built Smokers - Georgia" src="res/img/beck-built-smokers.jpg" />
+                    </div>
+                    <div class="col-8">
+                      <h2 class="red">
+                        Beck Built Smokers
+                      </h2>
+                      <p class="up-n-smoke-copy white">
+                        Meats aren't just going to smoke themselves, you need the right tool for the job.  <span class="yellow">Beck Built Smokers</span> out of <span class="red">WayCross, GA</span> knows a thing or two when it comes
+                        to smoking quality meats.
+                        <br /><br />
+                        The choice was easy to make, the best, or nothing.
+                      </p>
+                    </div>
+                  </div> -->
+
+                  <!-- <div class="up-n-smoke-row row pt-5">
+                    <div class="col-4">
+                      <img class="mw-100" alt="Beck Built Smokers - Georgia" src="res/img/georgia-peaches.jpg" />
+                    </div>
+                    <div class="col-8">
+                      <h2 class="yellow">
+                        Lane Georgia Peaches
+                      </h2>
+                      <p class="up-n-smoke-copy white">
+                        I bet you can guess where we get our peaches from...that's right, <span class="red">Georgia.</span> It would be a crime for them to be from anywhere else.
+                        <br /><br />
+                        We make the trek all the way down to ensure the Southern Peach flavor is in every bite of our Peach Cobbler.
+                      </p>
+                    </div>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="up-n-smoke-peaches section-container-beck container-fluid bg-ribs pt-0 pb-0">
+          <!-- <div class="fullscreen-bg">
+            <video width="100%" class="up-n-smoke-smoke fullscreen-bg__video" src="res/vids/up-n-smoke-home-bg-vid.mp4" autoplay muted loop></video>
+          </div> -->
+          <div class="up-n-smoke-row row up-n-smoke-x-padding-top">
+            <div class="col-sm-12 col-md-6 order-sm-2">
+              <img class="beck-smoker" alt="Beck Built Smokers - Georgia" src="res/img/becker.png" />
+            </div>
+            <div class="col-sm-12 col-md-6 pt-5 order-first order-sm-1">
+              <h2 class="up-n-smoke-header beck">
+                Beck Built Smokers
+              </h2>
+              <p class="up-n-smoke-copy blue">
+                Meats aren't just going to smoke themselves, you need the right tools for the job.  <span class="yellow">Beck Built Smokers</span> out of <span class="red">WayCross, GA</span> know a thing or two when it comes
+                to smoking quality meats.
+                <br /><br />
+                The choice was easy to make, the best, or nothing.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="up-n-smoke-peaches section-container-wood container-fluid bg-wood pb-0">
+          <div class="up-n-smoke-row row pt-5">
+            <div class="col-md-6 col-sm-12 offset-sm-1 order-sm-2">
+              <h2 class="up-n-smoke-header up-n-smoke-header-wood">
+                Cutting Edge Wood
+              </h2>
+              <p class="up-n-smoke-copy up-n-smoke-copy-wood">
+                Any bbq enthusiast understands the importance of cooking with a quality wood.  Ensuring the southern flavor is present in every bite, we teamed up with <a class="yellow" target="_blank" href="https://www.cuttingedgefirewood.com/">Cutting Edge Wood</a> originating in Georgia.
+                <br /><br />
+                Notes of <span class="yellow">Hickory</span> and <span class="yellow">Apple</span> are cooked into each creation through our process of smoking the food to perfection.
+              </p>
+            </div>
+            <div class="col-md-5 col-sm-12 up-n-smoke-bg-img order-sm-first order-sm-1">
+              <img class="wood" alt="Cutting Edge Wood - Georgia" src="res/img/cutting-edge-wood-new.png" />
+            </div>
+          </div>
+        </section>
+        
+        <section class="up-n-smoke-peaches section-container container-fluid bg-peaches pt-0 pb-0">
+          <div class="up-n-smoke-row row pt-0 pb-0 order-sm-2">
+            <div class="col-md-6 col-sm-12 up-n-smoke-bg-img">
+              <img class="peachy" alt="Lane Georgia Peaches - Georgia" src="res/img/peac.png" />
+            </div>
+            <div class="col-md-6 col-sm-12 pt-5 order-first order-sm-1">
+              <h2 class="up-n-smoke-header yellow">
+                Lane Georgia Peaches
+              </h2>
+              <p class="up-n-smoke-copy blue">
+                I bet you can guess where we get our peaches from...that's right, <span class="red">Georgia.</span> It would be a crime for them to be from anywhere else.
+                <br /><br />
+                We make the trek all the way down to ensure the Southern Peach flavor is in every bite of our Peach Cobbler.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="up-n-smoke-peaches section-container container-fluid bg-ribs pb-0 pt-0">
+          <div class="up-n-smoke-row row pt-0">
+            <div class="col-md-5 col-sm-12 offset-md-1 pt-5">
+              <h2 class="up-n-smoke-header red">
+                Ironwood Meats
+              </h2>
+              <p class="up-n-smoke-copy blue">
+                We like to keep things local and support local business, so no sense in getting our meat from anywhere else than our hometown.  
+                <br><br>
+                <span class="red">Ironwood Meats</span> provide us with grass fed, organic beef that will have you tasting the flavor when you wake up the next morning.
+              </p>
+            </div>
+            <div class="col-md-6 col-sm-12 up-n-smoke-bg-img">
+              <img class="ribs" alt="UP-N-SMOKE Eats - Ironwood, MI" src="res/img/ribs-1.png" />
+            </div>
+          </div>
+        </section>
+        
+        <section class="up-n-smoke-tea section-container-tea container-fluid bg-tea pb-0 pt-0">
+          <div class="up-n-smoke-row row pt-0">
+            <div class="col-md-4 col-sm-12 up-n-smoke-bg-img order-sm-2">
+              <img class="tea" alt="UP-N-SMOKE Sweet Tea - Ironwood, MI" src="res/img/sweet-tea.png" />
+            </div>
+            <div class="col-md-8 col-sm-12 pt-5 up-n-smoke-x-padding order-first order-sm-1">
+              <h2 class="up-n-smoke-header yellow">
+                Homemade Sweet Tea
+              </h2>
+              <p class="up-n-smoke-copy blue">
+                A southern meal just isn't right without some sweet tea to wash it down with.  Our fresh homemade sweet tea is sure to have you feeling like you are relaxing in the Georgia plains.
+                <br /><br />
+                We also have fresh squeezed lemonade to quench your thirst, or even better yet, get wild and go with an Arnie Palmer.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="up-n-smoke-peaches section-container-bread container-fluid bg-ribs pt-0 pb-0">
+          <div class="up-n-smoke-row row pt-0">
+            <div class="col-md-6 col-sm-12 offset-md-1 pt-5">
+              <h2 class="up-n-smoke-header bake-bread">
+                Bake Superior Bread
+              </h2>
+              <p class="up-n-smoke-copy blue">
+                Is there anything better than fresh baked bread? Our friends just down the street at <a href="https://www.facebook.com/BakeSuperiorBread/" target="_blank" class="red">Bake Superior Bread</a> dialed up a a Brioche bun to pair with our sandwiches that will
+                make you weak in the knees.
+              </p>
+            </div>
+            <div class="col-md-5 col-sm-12 up-n-smoke-bg-img">
+              <img class="ribs" alt="Bake Superior Bread - Ironwood, Mi" src="res/img/superior-breads.png" />
+            </div>
+          </div>
+        </section>
+
+        <section class="up-n-smoke-tea section-container-whitney container-fluid bg-tea pt-0 pb-0">
+          <div class="up-n-smoke-row row pt-0">
+            <div class="col-md-6 col-sm-12 up-n-smoke-bg-img order-sm-2">
+              <img class="farm" alt="UP-N-SMOKE Sweet Tea - Ironwood, MI" src="res/img/whitney-farms.png" />
+            </div>
+            <div class="col-md-6 col-sm-12 pt-5 order-first order-sm-1">
+              <h2 class="up-n-smoke-header whitney-creek">
+                Whitney Creek Farm
+              </h2>
+              <p class="up-n-smoke-copy blue">
+                Our chickens come from <span class="">Whitney Creek Farm</span> just south of Ironwood, Michigan.  Their chickens roam in fresh pasture every day getting a varied, natural diet 
+                that you can taste in every bite.                
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--End What We Do Section-->
+        <!--When and Where Section-->
+        <!-- <section class="up-n-smoke-what-we-do section-container container-fluid bg-map bg-yellow">
+          <div class="container">
+            <div class="row h-100 justify-content-center align-items-center">
+              <div class="mx-auto">
+                <div class="user-signup__intro">
+                  <h1 class="up-n-smoke-section-title-two-where blue">When &amp; Whe<span class="liga">re</span></h1>
+                </div>
+                <div class="up-n-smoke-page-content">
+                  <h2 class="blue text-center">
+                    Stationed in the U.P.
+                    <span class="white">
+                      But we're on the move.
+                    </span>
+                    <span class="red">
+                      Follow us to track us down.
+                    </span>
+                  </h2>
+                  
+                  <div class="up-n-smoke-row pt-5">
+                    <div class="col-12">
+                      <p class="up-n-smoke-copy blue">
+                        You can find us off of Ayer Street just outside Downtown Ironwood.  If we're not there, we're somewhere else.  Check below or our <span class="red">Instagram</span> and <span class="red">Facebook</span> accounts.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="up-n-smoke-row pt-5">
+                    <div class="col-12">
+                      <h2 class="up-n-smoke-header red border-bottom-heading">
+                        WHERE WE'RE AT
+                      </h2>
+                      <div class="media pt-4">
+                        <div class="up-n-smoke-date text-center mr-4 col-2 pt-4 pb-4">
+                          JUN<br />22nd
+                        </div>
+                        <div class="media-body">
+                          <h2 class="mt-0">Ayer Street - Ironwood, Michigan</h2>
+                          <h4>
+                            JUNE 22nd
+                          </h4>
+                          <h4>
+                            East Ayer Street, Ironwood Michigan
+                          </h4>
+                          <h4 class="red">
+                            Google Maps Link
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 pt-5">
+                      <h2 class="up-n-smoke-header red border-bottom-heading">
+                        Where We'll Be
+                      </h2>
+
+                      <div class="media pt-4 border-bottom-heading">
+                        <div class="up-n-smoke-date text-center mr-4 col-2 pt-4 pb-4">
+                          JUN<br />27th
+                        </div>
+                        <div class="media-body">
+                          <h2 class="mt-0">Cannabis Cup - Detroit, Michigan</h2>
+                          <h4>
+                            JUNE 27th
+                          </h4>
+                          <h4>
+                            7890 Some Street - Detroit, Michigan
+                          </h4>
+                          <h4 class="red">
+                            Google Maps Link
+                          </h4>
+                        </div>
+                      </div>
+
+                      <div class="media pt-4 border-bottom-heading">
+                        <div class="up-n-smoke-date text-center mr-4 col-2 pt-4 pb-4">
+                          JUN<br />27th
+                        </div>
+                        <div class="media-body">
+                          <h2 class="mt-0">Cannabis Cup - Detroit, Michigan</h2>
+                          <h4>
+                            JUNE 27th
+                          </h4>
+                          <h4>
+                            7890 Some Street - Detroit, Michigan
+                          </h4>
+                          <h4 class="red">
+                            Google Maps Link
+                          </h4>
+                        </div>
+                      </div>
+
+                      <div class="media pt-4 border-bottom-heading">
+                        <div class="up-n-smoke-date text-center mr-4 col-2 pt-4 pb-4">
+                          JUN<br />27th
+                        </div>
+                        <div class="media-body">
+                          <h2 class="mt-0">Cannabis Cup - Detroit, Michigan</h2>
+                          <h4>
+                            JUNE 27th
+                          </h4>
+                          <h4>
+                            7890 Some Street - Detroit, Michigan
+                          </h4>
+                          <h4 class="red">
+                            Google Maps Link
+                          </h4>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <!--End When and Where Section-->
+        <!--MENU Section-->
+        <section class="up-n-smoke-what-we-do section-container container-fluid bg-black pb-5">
+          <div class="container">
+            <div class="row h-100 justify-content-center align-items-center">
+              <div class="mx-auto">
+                <div class="user-signup__intro">
+                  <h1 class="up-n-smoke-section-title-two-where yellow">Our Food</h1>
+                </div>
+                <div class="up-n-smoke-page-content">
+                  <h2 class="yellow text-center niner">
+                      U.P. Inspired.
+                    <span class="white">
+                      Southern Flavor.
+                    </span>
+                    <span class="red">
+                      Created with Love.
+                    </span>
+                  </h2>
+                  
+                  <div class="up-n-smoke-row pt-5">
+                    <div class="col-12">
+                      <p class="up-n-smoke-copy white">
+                        Tasty &amp; Real. Our Blend of Southern hospitality will knock your socks off.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="up-n-smoke-row pt-md-5">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 pt-5">
+                        <h2 class="up-n-smoke-header up-n-smoke-header-food text-sm-left white border-bottom-heading-white">
+                          Chicken
+                        </h2>
+                        
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Whole Wings <span class="red">$12 </span><span class="red"> 5 wings</span> - <span class="red">$20 </span><span class="red"> 10 wings</span>
+                        </p>
+
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Sliced Breast Meat / Thigh <span class="red">$7 </span><span class="red"> 4 ounces</span> - <span class="red">$10 </span><span class="red"> 8 ounces</span>
+                        </p>
+
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Half Chicken <span class="red">$15</span>
+                        </p>
+
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Whole Chicken <span class="red">$25</span>
+                        </p>
+
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Pulled Chicken <span class="red">$7 half pound</span> - <span class="red">$14 one pound</span>
+                        </p>
+                      </div>
+
+                      <div class="col-md-12 col-sm-12 pt-5">
+                        <h2 class="up-n-smoke-header up-n-smoke-header-food text-sm-left white border-bottom-heading-white">
+                          Ribs
+                        </h2>
+                        
+                        <p class="up-n-smoke-menu-item-price red mb-0">
+                          1\2 SLAB AND FULL SLAB
+                        </p>
+                        
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Spared Ribs <span class="red">$15 half slab</span> - <span class="red">$25 full slab</span>
+                        </p>
+  
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Baby Back Ribs <span class="red">$15 half slab</span> - <span class="red">$25 full slab</span>
+                        </p>
+  
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Beef Ribs <span class="red">$15 half slab</span> - <span class="red">$25 full slab</span>
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-12 pt-5">
+                        <h2 class="up-n-smoke-header up-n-smoke-header-food white border-bottom-heading-white">
+                          Meats
+                        </h2>
+                        
+                        <p class="up-n-smoke-menu-item-price red mb-0">
+                          SOLD BY WEIGHT - 1/4LB - 1\2LB - 1LB +
+                        </p>
+
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Beef Brisket <span class="red">$7 quarter pound</span> - <span class="red">$14 half pound</span> - <span class="red">$20 one pound</span>
+                        </p>
+                      
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Tri Tip - Beef <span class="red">$7 quarter pound</span> - <span class="red">$14 half pound</span> - <span class="red">$20 one pound</span>
+                        </p>
+  
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Pulled Pork Butt <span class="red">$7 quarter pound</span> - <span class="red">$14 half pound</span> - <span class="red">$20 one pound</span>
+                        </p>
+                      </div>
+  
+                      <div class="col-12 pt-5">
+                        <h2 class="up-n-smoke-header up-n-smoke-header-food white border-bottom-heading-white">
+                          Sandwiches
+                        </h2>
+                        <p class="up-n-smoke-menu-item-price yellow border-bottom-heading-yellow mb-0">
+                          NAPA APPLE PORK SANDWICH <span class="red" style="text-decoration: none;">$15</span>
+                        </p>
+                        <p class="up-n-smoke-menu-item-description white">
+                          SLOW COOKED PORK BUTT WITH <span class="red">HOUSE NAPA APPLE SLAW</span> AND OUR <span class="yellow ">HOUSEMADE BBQ SAUCE</span> CHOICE OF ONE SIDE
+                        </p>
+                        <br />
+                        <p class="up-n-smoke-menu-item-price yellow border-bottom-heading-yellow mb-0">
+                          CLASSIC PULLED CHICKEN SANDWICH <span class="red">$12</span>
+                        </p>
+                        <p class="up-n-smoke-menu-item-description white">
+                          SLOW COOKED CHICKEN WITH PICKLE CHIPS AND <span class="red">HOUSEMADE BBQ SAUCE</span> CHOICE OF <span class="yellow">ONE SIDE.</span>
+                        </p>
+                        <br />
+                        <p class="up-n-smoke-menu-item-price yellow border-bottom-heading-yellow mb-0">
+                          BARBEQUE PLATES <span class="red">$14</span>
+                        </p>
+                        <p class="up-n-smoke-menu-item-description white">
+                          Your choice of meat <span class="red">- chicken, pulled pork, beef brisket - </span>served with <span class="yellow">Mac N cheese,</span> <span class="red">napa apple slaw,</span><span class="yellow"> honey biscuit</span> and choice of one side.
+                        </p>
+                        <br />
+
+                        <p class="up-n-smoke-menu-item-price yellow border-bottom-heading-yellow mb-0">
+                          SMOKED BARBECUE BURGER WITH FRIED GREEN TOMATOES <span class="red">$15</span>
+                        </p>
+                        <p class="up-n-smoke-menu-item-description white">
+                          8OZ GRASSFEED GROUND BEEF PATTY WITH <span class="red">APPLEWOOD BACON,</span><span class="yellow"> SHARP CHEDDAR,</span> <span class="red"> FRIED ONIONS</span> AND <span class="yellow">HOUSEMADE BBQ SAUCE</span> CHOICE OF ONE SIDE.
+                        </p>
+                      </div>
+  
+                      <div class="col-12 pt-5">
+                        <h2 class="up-n-smoke-header up-n-smoke-header-food white border-bottom-heading-white">
+                          Sides
+                        </h2>
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          UP-N-SMOKE BARBECUE BAKED BEANS
+                          <br />
+                          <span class="red">$4 8 ounces</span> - <span class="red">$12 12 ounces</span> - <span class="red">$14 1 quart</span>
+                        </p>
+  
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          POTATO SALAD
+                          <br />
+                          <span class="red">$4 8 ounces</span> - <span class="red">$12 12 ounces</span> - <span class="red">$14 1 quart</span>
+                        </p>
+  
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          COLLARD GREENS
+                          <br />
+                          <span class="red">$4 8 ounces</span> - <span class="red">$12 12 ounces</span> - <span class="red">$14 1 quart</span>
+                        </p>
+
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          SMOKED MAC N CHEESE
+                          <br />
+                          <span class="red">$4 8 ounces</span> - <span class="red">$12 12 ounces</span> - <span class="red">$14 1 quart</span>
+                        </p>
+  
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          SOUTHERN HONEY BUTTER BISCUIT
+                          <br />
+                          <span class="red">$2  three biscuits</span>
+                        </p>
+  
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          CORN ON THE COB
+                          <br />
+                          <span class="red">$4 8 ounces</span> - <span class="red">$12 12 ounces</span> - <span class="red">$14 1 quart</span>
+                        </p>
+  
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          NAPA-APPLE SLAW
+                          <br />
+                          <span class="red">$4 8 ounces</span> - <span class="red">$12 12 ounces</span> - <span class="red">$14 1 quart</span>
+                        </p>
+                      </div>
+  
+                      <div class="col-12 pt-5">
+                        <h2 class="up-n-smoke-header up-n-smoke-header-food white border-bottom-heading-white">
+                          BARBECUE SAUCES
+                        </h2>
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Peach <span class="red">$.50</span>
+                        </p>
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          House <span class="red">$.50</span>
+                        </p>
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Spicy <span class="red">$.50</span> <i><img class="up-n-smoke-flame-icon" src="res/img/flame-icon.png" /></i>
+                        </p>
+                        <!-- <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Infused Peach
+                        </p> -->
+                      </div>
+  
+                      <div class="col-12 pt-5">
+                        <h2 class="up-n-smoke-header up-n-smoke-header-food white border-bottom-heading-white">
+                          DESSERTS
+                        </h2>
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          GEORGIA PEACH COBBLER <span class="red">$5</span>
+                        </p>
+                      </div>
+  
+                      <div class="col-12 pt-5">
+                        <h2 class="up-n-smoke-header up-n-smoke-header-food white border-bottom-heading-white">
+                          SPECIAL DESSERTS
+                        </h2>
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          OLD FASHION BANANA PUDDING <span class="red">$5</span>
+                        </p>
+  
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          RED VELVET CAKE <span class="red">$7</span>
+                        </p>
+                      </div>
+  
+                      <div class="col-12 pt-5">
+                        <h2 class="up-n-smoke-header up-n-smoke-header-food white border-bottom-heading-white">
+                          Beverages
+                        </h2>
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          SWEET TEA <span class="red">Three Dollars</span>
+                        </p>
+  
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          Lemonade <span class="red">Three Dollars</span>
+                        </p>
+  
+                        <p class="up-n-smoke-menu-item-price yellow mb-0">
+                          ARNOLD PALMER <span class="red">Three Dollars</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </section>
+        <!--End MENU Section-->
+        <!--CONTACT Section-->
+        <!-- <section class="up-n-smoke-what-we-do section-container container-fluid bg-red">
+          <div class="container">
+            <div class="row h-100 justify-content-center align-items-center">
+              <div class="mx-auto col-sm-12">
+                <div class="user-signup__intro">
+                  <h1 class="up-n-smoke-section-title-two-where blue">Conact Us</h1>
+                </div>
+                <div class="up-n-smoke-page-content"> -->
+                  <!-- <h2 class="yellow text-center">
+                      U.P. Inspired.
+                    <span class="white">
+                      Southern Flavor.
+                    </span>
+                    <span class="red">
+                      Created with Love.
+                    </span>
+                  </h2> -->
+                  
+                  <!-- <div class="up-n-smoke-row pt-5">
+                    <div class="col-12">
+                      <p class="up-n-smoke-copy yellow">
+                        Provide your information below and we will keep you in the know of what we got cooking.
+                        <br /><br />
+                        We won't use your information for anything else, promise.
+                      </p>
+                    </div>
+                  </div> -->
+
+                  <!-- <div class="up-n-smoke-row pt-5">
+                    <p class="up-n-smoke-copy blue text-center">
+                      SIGN UP TO SEE WHAT WE ARE COOKING UP
+                    </p>
+                  </div> -->
+
+                  <!-- <div class="col-12">
+                    <form class="form form-horizontal user-signup__form" name="form" novalidate="" action="https://up-n-smoke.us10.list-manage.com/subscribe/post" method="POST">
+                      <input type="hidden" name="u" value="090dd67ebac9702bd98862a13">
+                      <input type="hidden" name="id" value="1e2a03de91">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="user-signup__form-group m-lg-v form-group col-sm-12">
+                            <input type="email" name="MERGE0" id="MERGE0" class="form-control form-control__input user-signup__email" pattern="/^[a-zA-Z0-9+-_]+(\.[_a-zA-Z0-9+]+)*@[a-zA-Z0-9+-_]+(\.[a-zA-Z0-9+-_]+)*(\.[a-zA-Z]+)$/" placeholder="Email" aria-required="true" required="required">
+                          </div>
+                          <div class="user-signup__form-group m-lg-v form-group col-sm-12">
+                            <input type="email" name="MERGE1" id="MERGE1" class="form-control form-control__input user-signup__email" placeholder="First Name" aria-required="true" required="required">
+                          </div>
+                          <div class="user-signup__form-group m-lg-v form-group col-sm-12">
+                            <input type="email" name="MERGE2" id="MERGE2" class="form-control form-control__input user-signup__email" placeholder="Last Name" aria-required="true" required="required">
+                          </div>        
+                        </div>
+                        <div class="col-12">
+                          <div class="user-signup__form-group m-lg-v form-group text-center col-12 mt-0">
+                            <button type="submit" class="btn btn-default submit user-signup__submit col-12"><span>SUBMIT <i><img class="up-n-smoke-flame-icon" src="res/img/flame-icon.png" /></i></span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <!--End CONTACT Section-->
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169180181-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-169180181-1');
+    </script>
+
   </body>
 </html>
